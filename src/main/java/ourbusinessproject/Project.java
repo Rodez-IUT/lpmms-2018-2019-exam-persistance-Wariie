@@ -27,7 +27,6 @@ public class Project {
     public Project(String title, String description) {
         this.title = title;
         this.description = description;
-        this.enterprise = enterprise;
     }
 
     public Long getId() {
