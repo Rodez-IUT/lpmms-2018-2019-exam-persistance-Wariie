@@ -17,10 +17,13 @@ public class Project {
 
     private String description;
 
-
     @NotNull
     @ManyToOne(cascade = {CascadeType.PERSIST})
     private Enterprise enterprise;
+    
+    @Version
+    private Long version;
+    
 
     public Project() {}
 
@@ -56,4 +59,13 @@ public class Project {
     public void setEnterprise(Enterprise enterprise) {
         this.enterprise = enterprise;
     }
+
+	public long getVersion() {
+		// TODO Auto-generated method stub
+		return version;
+	}
+	
+	public void setVersion(Long v) {
+		version =v;
+	}
 }
